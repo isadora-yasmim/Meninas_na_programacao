@@ -1,18 +1,17 @@
-#include <bits/stdc++.h>
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 
 using namespace std;
 
-int main (){
-string S;
+int main() {
+    string S;
 
-cin >> S;
-char num[S.length()]; 
-strcpy(num, S.c_str()); 
+    cin >> S;
 
-cout << num[0]*num[2];
+    int a = S[0] - '0'; 
+    int b = S[2] - '0';  
 
-return 0;
+    cout << a * b << endl;
 
+    return 0;
 }
