@@ -1,12 +1,12 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <cmath>
+
 using namespace std;
 
-int main (){
-   int a;
-
-   cin>> a;
-
-   std::cout << std::pow(2, a) << '\n';
+int main() {
+    int N;
+    cin >> N;
+    cout << (1 << N) << endl;
+    return 0;
 }
- 
  
