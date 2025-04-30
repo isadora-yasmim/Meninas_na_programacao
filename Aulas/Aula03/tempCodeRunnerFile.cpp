@@ -12,18 +12,22 @@ tam=S.length();
 
 for(i=0;i<tam-1;i++){
     for(j=i+1;j<tam;j++){
-       if (i%2==0 && S[i]=='h'&& j%2==1 && S[j]=='i'){
+        if(i%2==0 && S[i]!='h'){
             verificador=1;
-        }else{
-            verificador=0;
+            //cout<< "No";
+            break;
+        }else if (j%2==1 && S[j]!='i'){
+            verificador=1;
+            //cout<< "No";
+            break;
         }
     }
 }
 
 if(verificador==1) {
-    cout<< "Yes";
-}else{
     cout<< "No";
+}else{
+    cout<< "Yes";
 }
 
 
