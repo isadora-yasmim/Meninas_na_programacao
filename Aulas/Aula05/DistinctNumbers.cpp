@@ -1,21 +1,20 @@
 #include <bits/stdc++.h>
-#include <unordered_set>
 using namespace std;
 
 int main (){
-int n, x, i;
+int n, i;
 
 cin>>n;
 
-unordered_set<int>dif;
-
+vector<int> x(n);
 
 for(i=0; i<n; i++){
-    cin>> x;
-    dif.insert(x);
+    cin>> x[i];
 }
 
-cout<< dif.size();
+set<int> diff(x.begin(), x.end());
+
+cout<< diff.size();
  
 return 0;  
 }
